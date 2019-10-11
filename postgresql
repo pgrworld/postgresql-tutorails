@@ -1,0 +1,33 @@
+1.// For creating the database
+EX: CREATE DATABASE database_name;
+==>   CREATE DATABASE testdb;
+
+
+2. // For show the existing database
+EX:  ==> \l  or \list
+
+
+3. // For connecting to required database
+EX: \C required_database name
+==>  \c mydb;
+
+
+4. // For knowing the current database 
+EX:  ==>  select current_database();
+
+
+5. // if we want to see the tables in the database
+EX: ==>  \d
+
+
+6.// if we want to see the all columns in the table
+EX:  \d table_name
+==>  \d Table1
+
+7. // If we want to delete the table 
+EX:  \d --> It will show all existing tables
+      drop table table_name
+==>   drop table MYTABLE1;
+
+
+8.
