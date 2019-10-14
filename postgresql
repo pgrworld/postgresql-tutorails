@@ -73,7 +73,22 @@ EX: alter table mytable1 rename column pswd to password;
 20.// if we want to delete the entire table fastly
 EX: truncate mytable1;   ==> mytable1 is the table_name.
 
-21.//
+21.// joins
+
+22.//if we want combine two or more tables and by eleminating duplicates
+EX: select id from mytable1
+    union 
+    select id from mytable2;
+    
+    
+23.// if we want to combine two or more tables without elemenating duplicates
+    select id from mytable1
+    union all
+    select id from mytable2;
+    
+24.// triggers
+
+25.// 
 
 
 
