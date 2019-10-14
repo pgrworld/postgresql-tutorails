@@ -30,4 +30,46 @@ EX:  \d --> It will show all existing tables
 ==>   drop table MYTABLE1;
 
 
-8.
+8.// if we want to modify the existing data in the table
+EX:  update mytable1 set id = 555 where id = 23; 
+
+
+9.// If we want to delete the existing records in the table
+EX:  delete from mytable1 where id = 555;
+
+
+10.// If we want to retreving a set of limited records
+EX: select *from mytable1 where limit 2;    ==> it returns two statements 
+
+
+11.// If we want to rertreving the data after a certain records
+EX: select *from mytable1 where limit 2 offset 3;
+
+
+12.// If we want to sorting the data either asc or desc 
+EX: select *from mytable1 order by id asc;
+EX: select *from mytable1 order by id,age,name desc;
+
+13.//group by
+
+14.//with clause
+
+15.//if we want to retreving only unique records 
+EX: select distinct *from mytable1;
+EX: select distinct id from mytable1;
+
+16.// if we want to changing the database name
+EX: alter database rahuldb rename to cognitivedb;
+
+17.// if we want to add column to an existing database
+EX: alter table mytable1 add column pswd text;
+
+18.// if we want to drop column to an existing database
+EX: alter table mytable1 drop column pswd;
+
+19.// if we want to change the column name of an existing database
+EX: alter table mytable1 rename column pswd to password;
+
+
+
+
