@@ -70,6 +70,11 @@ EX: alter table mytable1 drop column pswd;
 19.// if we want to change the column name of an existing database
 EX: alter table mytable1 rename column pswd to password;
 
+20.// if we want to delete the entire table fastly
+EX: truncate mytable1;   ==> mytable1 is the table_name.
+
+21.//
+
 
 
 
